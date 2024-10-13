@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather website</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="modeSwitch">
+          <div id="switcher">
+            <div class="light" id="circle"></div>
+          </div>
+          <span id="switcherLabel">Light Mode</span>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass" id="search"></i>
+          <input
+            type="text"
+            id="input"
+            placeholder="Search for your preffered city..."
+          />
+        </div>
+        <div class="currentLocation">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <span>Current Location</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="card datetime">
+          <h2>Athens</h2>
+          <div class="time">
+            <span class="currentTime">09:03</span>
+            <span class="date">Thursday, 31 Aug</span>
+          </div>
+        </div>
+        <div class="card weatherDetails">
+          <div class="celsius">
+            <div class="temperature">
+              <div class="mainTemp">
+                <span class="temp">24°C</span>
+                <div class="feels">
+                  <span>Feels like:</span>
+                  <span id="currentTemp">22°C</span>
+                </div>
+              </div>
+            </div>
+            <div class="sun">
+              <div class="sunrise sunMove">
+                <i class="fa-solid fa-arrows-up-to-line"></i>
+                <div>
+                  <span>Sunrise</span>
+                  <span>06:37 AM</span>
+                </div>
+              </div>
+              <div class="sunset sunMove">
+                <i class="fa-solid fa-arrows-down-to-line"></i>
+                <div>
+                  <span>Sunset</span>
+                  <span>20:37 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bigDetails">
+            <i class="fa-solid fa-sun"></i>
+            <span>Sunny</span>
+          </div>
+          <div class="smallDetails">
+            <div class="details">
+              <i class="fa-solid fa-water"></i>
+              <span id="humidity">41%</span>
+              <span>Humidity</span>
+            </div>
+            <div class="details">
+              <i class="fa-solid fa-wind"></i>
+              <span id="wind">2 km/h</span>
+              <span>Wind Speed</span>
+            </div>
+            <div class="details">
+              <i class="fa-solid fa-gauge"></i>
+              <span id="pressure">997hPa</span>
+              <span>Pressure</span>
+            </div>
+            <div class="details">
+              <i class="fa-solid fa-atom"></i>
+              <span id="uv">8</span>
+              <span>UV</span>
+            </div>
+          </div>
+        </div>
+        <div class="card forecast">
+          <h3>5 Days Forecast:</h3>
+          <ul>
+            <!-- <li>
+              <i class="fas fa-cloud-rain"></i>
+              <span>20°C</span>
+              <span>Friday, 1 Sep</span>
+            </li>
+            <li>
+              <i class="fas fa-cloud-sun"></i>
+              <span>22°C</span>
+              <span>Saturday, 2 Sep</span>
+            </li>
+            <li>
+              <i class="fas fa-sun"></i>
+              <span>27°C</span>
+              <span>Sunday, 3 Sep</span>
+            </li>
+            <li>
+              <i class="fas fa-cloud"></i>
+              <span>18°C</span>
+              <span>Monday, 4 Sep</span>
+            </li>
+            <li>
+              <i class="fas fa-cloud-showers-heavy"></i>
+              <span>16°C</span>
+              <span>Tuesday, 5 Sep</span>
+            </li> -->
+          </ul>
+        </div>
+        <div class="card hourlyForecast">
+          <h3>Hourly Forecast:</h3>
+          <div class="hourly-items">
+            <!-- <div class="hourly-item sunshine">
+              <span>12:00</span>
+              <i class="fas fa-sun"></i>
+              <span>26°C</span>
+              <span>3km/h</span>
+            </div>
+            <div class="hourly-item sunshine">
+              <span>15:00</span>
+              <i class="fas fa-sun"></i>
+              <span>27°C</span>
+              <span>2km/h</span>
+            </div>
+            <div class="hourly-item sunshine">
+              <span>18:00</span>
+              <i class="fas fa-cloud-sun"></i>
+              <span>27°C</span>
+              <span>2km/h</span>
+            </div>
+            <div class="hourly-item cloud">
+              <span>21:00</span>
+              <i class="fas fa-cloud"></i>
+              <span>26°C</span>
+              <span>3km/h</span>
+            </div>
+            <div class="hourly-item cloud">
+              <span>00:00</span>
+              <i class="fas fa-cloud-rain"></i>
+              <span>22°C</span>
+              <span>3km/h</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1e411deb09.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
